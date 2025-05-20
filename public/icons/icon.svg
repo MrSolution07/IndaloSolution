@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#1B7E45"/>
+  
+  <!-- Shield outline -->
+  <path d="M256 96C256 96 150 136 150 136C150 136 150 190.867 150 238.4C150 336.8 198.933 385.333 256 416C313.067 385.333 362 336.8 362 238.4C362 190.867 362 136 362 136C362 136 256 96 256 96Z" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Checkmark -->
+  <path d="M192 248L232 288L320 200" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- South African flag colors - horizontal bars -->
+  <rect x="150" y="136" width="212" height="8" fill="#DE3831"/>  <!-- Red -->
+  <rect x="150" y="144" width="212" height="8" fill="#FFFFFF"/>  <!-- White -->
+  <rect x="150" y="152" width="212" height="8" fill="#002395"/>  <!-- Blue -->
+  <rect x="150" y="160" width="212" height="8" fill="#007A4D"/>  <!-- Green -->
+  <rect x="150" y="168" width="212" height="8" fill="#FFB612"/>  <!-- Yellow -->
+</svg>

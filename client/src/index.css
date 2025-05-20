@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Earthy color scheme with white background for clarity */
+  --background: 0 0% 100%;
+  --foreground: 25 10% 15%; 
+  --muted: 60 5% 96%;
+  --muted-foreground: 25 5% 45%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 25 10% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 25 10% 15%;
+  --border: 120 5% 90%;
+  --input: 120 5% 90%;
+  /* Green primary color for sustainability */
+  --primary: 120 30% 35%;
+  --primary-foreground: 0 0% 100%;
+  /* Gold/amber secondary color inspired by Indalo logo */
+  --secondary: 45 70% 65%;
+  --secondary-dark: 45 70% 45%;
+  --secondary-light: 45 60% 80%;
+  --secondary-foreground: 25 10% 15%;
+  /* Terracotta accent color inspired by South African landscapes */
+  --accent: 20 60% 50%;
+  --accent-light: 20 60% 85%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 60 9% 98%;
+  --ring: 120 30% 35%;
+  --radius: 0.5rem;
+}
+.dark {
+  /* Dark mode with earthy color scheme */
+  --background: 25 15% 12%;
+  --foreground: 0 0% 98%;
+  --muted: 30 10% 20%;
+  --muted-foreground: 30 10% 70%;
+  --popover: 25 15% 12%;
+  --popover-foreground: 0 0% 98%;
+  --card: 25 15% 12%;
+  --card-foreground: 0 0% 98%;
+  --border: 30 10% 25%;
+  --input: 30 10% 25%;
+  /* Darker green primary in dark mode */
+  --primary: 120 25% 30%;
+  --primary-foreground: 0 0% 98%;
+  /* Gold remains visible in dark mode */
+  --secondary: 45 60% 55%;
+  --secondary-dark: 45 60% 40%; 
+  --secondary-light: 45 60% 65%;
+  --secondary-foreground: 0 0% 15%;
+  /* Deeper terracotta accent */
+  --accent: 20 55% 40%;
+  --accent-light: 20 55% 60%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 120 25% 30%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
