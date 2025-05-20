@@ -33,7 +33,6 @@ export default defineConfig(async () => {
         output: {
           manualChunks: {
             react: ["react", "react-dom"],
-            vendor: ["lodash", "axios"],
           },
         },
       },
