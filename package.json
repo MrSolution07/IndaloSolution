@@ -4,12 +4,11 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-  "dev": "NODE_ENV=development tsx server/index.ts",
-  "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-  "start": "NODE_ENV=production node dist/index.js",
-  "check": "tsc",
-  "db:push": "drizzle-kit push",
-  "postinstall": "npm rebuild esbuild"
+    "dev": "NODE_ENV=development tsx server/index.ts",
+    "build": "vite build && ncc build server/index.ts -o dist",
+    "start": "NODE_ENV=production node dist/index.js",
+    "check": "tsc",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -93,6 +92,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@types/ws": "^8.5.13",
+    "@vercel/ncc": "^0.38.3",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
     "drizzle-kit": "^0.18.1",
